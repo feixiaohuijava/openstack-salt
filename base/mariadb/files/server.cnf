@@ -1,0 +1,59 @@
+[server]
+[mysqld]
+datadir = /var/lib/mysql
+innodb-data-home-dir = /var/lib/mysql
+basedir = /usr
+binlog_format = ROW
+character-set-server = utf8
+collation-server = utf8_general_ci
+max_allowed_packet = 256M
+max_connections = 10000
+ignore-db-dirs = lost+found
+init-connect = SET NAMES utf8
+innodb_autoinc_lock_mode = 2
+innodb_buffer_pool_size = 2000M
+innodb_doublewrite = 0
+innodb_file_format = Barracuda
+innodb_file_per_table = 1
+innodb_flush_log_at_trx_commit = 2
+innodb_flush_method = O_DIRECT
+innodb_locks_unsafe_for_binlog = 1
+innodb_log_file_size = 2000M
+innodb_read_io_threads = 8
+innodb_write_io_threads = 8
+key_buffer_size = 64
+myisam-recover-options = BACKUP
+myisam_sort_buffer_size = 64M
+open_files_limit = 102400
+performance_schema = on
+query_cache_limit = 1M
+query_cache_size = 0
+query_cache_type =0
+skip-external-locking
+skip-name-resolve
+socket = /var/lib/mysql/mysql.sock
+table_open_cache = 10000
+thread_cache_size = 8
+thread_stack = 256K
+tmpdir = /tmp
+user = mysql
+wait_timeout = 1800
+[galera]
+wsrep_on = ON
+wsrep_provider = /usr/lib64/galera/libgalera_smm.so
+wsrep_cluster_address = "gcomm://{{ master_ip }},{{ slave_one_ip }},{{ slave_two_ip }}"
+wsrep_cluster_name = openstack
+wsrep_node_name = {{ hostname }}
+wsrep_node_address = {{ my_ip }}
+wsrep_sst_method = xtrabackup-v2
+wsrep_sst_auth = sst:{{ password }}
+wsrep_slave_threads = 4
+default_storage_engine = InnoDB
+bind-address = {{ my_ip }}
+[embedded]
+[mysqld_salf]
+nice = 0
+socket = /var/lib/mysql/mysql.sock
+syslog
+[mariadb]
+[mariadb-10.1]

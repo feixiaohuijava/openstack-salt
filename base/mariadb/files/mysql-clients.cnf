@@ -1,0 +1,19 @@
+[mysql]
+
+[mysql_upgrade]
+
+[mysqladmin]
+
+[mysqlbinlog]
+
+[mysqlcheck]
+
+[mysqldump]
+max_allowed_packet = 16M
+quick
+quote-names
+[mysqlimport]
+
+[mysqlshow]
+
+[mysqlslap]

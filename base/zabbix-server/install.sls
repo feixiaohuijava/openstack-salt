@@ -1,0 +1,24 @@
+zabbix-server_install:
+  pkg.installed:
+    - pkgs:
+       - wget
+       - net-snmp-devel
+       - openssl-devel
+       - lrzsz
+       - libcurl-devel
+       - perl-DBI
+       - pcre-devel
+       - libxml2
+       - libxml2-devel
+       - gcc
+       - php-gd
+       - php-xml
+       - php-mbstring
+       - php-ldap
+       - php-.x86_64
+       - php-pear
+       - php-xmlrpc
+       - net-tools
+       - wget
+       - vim-enhanced
+       - yum-utils

@@ -1,0 +1,4 @@
+MYSQL_USERNAME={{ clustercheckuser }}
+MYSQL_PASSWOrD={{ clustercheckpassword }}
+MYSQL_HOST=localhost
+MYSQL_PORT=3306

@@ -1,0 +1,30 @@
+controller01:
+   host: controller01
+   user: root
+   passwd: passw0rd
+   sudo: True
+controller02:
+   host: controller02
+   user: root
+   passwd: passw0rd
+   sudo: True
+controller03:
+   host: controller03
+   user: root
+   passwd: passw0rd
+   sudo: True
+saltstack:
+   host: saltstack
+   user: root
+   passwd: passw0rd
+   sudo: True
+compute01:
+   host: compute01
+   user: root
+   passwd: passw0rd
+   sudo: True
+compute02:
+   host: compute02
+   user: root
+   passwd: passw0rd
+   sudo: True

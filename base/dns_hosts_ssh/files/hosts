@@ -1,0 +1,9 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+{{ controller01 }} controller01
+{{ controller02 }} controller02
+{{ controller03 }} controller03
+{{ cluster_ip }} cluster_ip
+{{ saltstack }} saltstack
+{{ compute01 }} compute01
+{{ compute02 }} compute02

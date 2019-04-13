@@ -1,0 +1,6 @@
+[openstack]
+name=openstack
+baseurl={{ baseurl }}
+gpgcheck={{ gpgcheck }}
+enable={{ enable }}
+keepcache={{ keepcache }}
